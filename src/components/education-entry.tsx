@@ -13,21 +13,9 @@ export function EducationEntry({ education }: { education: Education }) {
               Advisor: {education.advisor}
             </p>
           )}
-          {education.thesis && (
-            <p className="text-sm text-zinc-500 mt-2 italic">
-              Thesis:{" "}
-              {education.thesisUrl ? (
-                <a
-                  href={education.thesisUrl}
-                  className="hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {education.thesis}
-                </a>
-              ) : (
-                education.thesis
-              )}
+          {education.description && (
+            <p className="text-sm text-zinc-600 mt-2 leading-relaxed whitespace-pre-line">
+              {education.description}
             </p>
           )}
         </div>

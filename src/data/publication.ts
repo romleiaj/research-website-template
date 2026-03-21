@@ -12,28 +12,32 @@ export interface Publication {
 }
 
 export const publicationData: Publication[] = [
-  // If you don't want to show publications, just make the array empty.
   {
-    year: "2024",
-    conference: "NeurIPS",
-    title: "Scalable Causal Discovery in High-Dimensional Time Series",
-    authors: "Jane Smith, Sarah Johnson, Yue Zhang",
-    paperUrl: "https://arxiv.org/abs/2409.15476",
-    codeUrl: "https://github.com/jsmith/scalable-causal-discovery",
-    //bibtex: "https://arxiv.org/abs/2409.15476.bib",
-    tldr: "Using causal discovery to find the causal structure of high-dimensional time series data.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1561622539-dffbfc2008fd?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    award: "🏆 Best Paper Award",
-    // if you have an image in public/images, you can use it like this:
-    // imageUrl: "/images/publication-image.jpg"
+    year: "2025",
+    conference: "International Conference on Computer Vision (ICCV) Marine Vision Workshop",
+    title:
+      "KAMERA: Enhancing Aerial Surveys of Ice-associated Seals in Arctic Environments",
+    authors:
+      "A. Romlein, B. Hou, Y. Boss, C. Christman, S. Koslovsky, E. Moreland, J. Parham, and A. Hoogs",
+    paperUrl: "https://arxiv.org/abs/2509.19129v1",
+    codeUrl: "https://github.com/kitware/kamera",
+    imageUrl: "/images/kamera_iccv_poster.jpg",
   },
   {
-    year: "2023",
-    conference: "ICML",
-    title: "Robust Causal Discovery Under Distribution Shift",
-    authors: "Jane Smith, Xue Chen, Sarah Johnson",
-    paperUrl: "https://arxiv.org/abs/2302.13095",
-    codeUrl: "https://github.com/jsmith/robust-causal-discovery",
+    year: "2022",
+    conference: "Workshop on Practical Deep Learning in the Wild",
+    title:
+      "ADAPT: An Open-Source sUAS Payload for Real-Time Disaster Prediction and Response with AI",
+    authors: "D. Davila, J. VanPelt, A. Lynch, A. Romlein, P. Webley, and M. Brown",
+    paperUrl: "https://arxiv.org/pdf/2201.10366",
+    codeUrl: "https://gitlab.kitware.com/adapt/adapt",
+  },
+  {
+    year: "2019",
+    conference: "IEEE Winter Conference on Applications of Computer Vision (WACV)",
+    title:
+      "Multi-Modal Detection Fusion on a Mobile UGV for Wide-Area, Long-Range Surveillance",
+    authors: "M. Brown, K. Fieldhouse, E. Swears, P. Tunison, A. Romlein, and A. Hoogs",
+    paperUrl: "https://ieeexplore.ieee.org/document/8659121",
   },
 ];
