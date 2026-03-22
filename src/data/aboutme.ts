@@ -26,7 +26,7 @@ export const aboutMe: AboutMe = {
     "I am a senior research and development engineer at Kitware, Inc., building open-source computer vision systems for real-world deployment. I enjoy turning research prototypes into reliable software.",
   email: "adam.romlein@kitware.com",
   // blogUrl: "/blog",
-  secretDescription: "If I'm not in front of a screen, you can find me in the mountains.",
+  secretDescription: "If I'm not in front of a screen you'll find me in the mountains.",
   imageUrl:
     "/images/profile.jpg",
   // cvUrl: "/resume.pdf",
