@@ -21,7 +21,7 @@ export const publicationData: Publication[] = [
       "A. Romlein, B. Hou, Y. Boss, C. Christman, S. Koslovsky, E. Moreland, J. Parham, and A. Hoogs",
     paperUrl: "https://arxiv.org/abs/2509.19129v1",
     codeUrl: "https://github.com/kitware/kamera",
-    imageUrl: "/images/kamera_iccv_poster.jpg",
+    imageUrl: "/images/kamera.jpg",
   },
   {
     year: "2022",
@@ -31,6 +31,7 @@ export const publicationData: Publication[] = [
     authors: "D. Davila, J. VanPelt, A. Lynch, A. Romlein, P. Webley, and M. Brown",
     paperUrl: "https://arxiv.org/pdf/2201.10366",
     codeUrl: "https://gitlab.kitware.com/adapt/adapt",
+    imageUrl: "/images/adapt.jpg",
   },
   {
     year: "2019",
