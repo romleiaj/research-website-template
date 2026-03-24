@@ -8,7 +8,7 @@ export function PublicationEntry({
   publication: Publication;
 }) {
   return (
-    <div className="flex flex-col sm:flex-row gap-6">
+    <div className="flex flex-col sm:flex-row gap-4">
       {publication.imageUrl && (
         <div className="w-full sm:w-1/4 min-w-[160px] relative">
           <Image
@@ -21,8 +21,8 @@ export function PublicationEntry({
         </div>
       )}
       <div className="flex flex-col flex-1">
-        <div className="flex flex-row gap-4 items-center mb-2">
-          <p className="text-xs text-zinc-500">
+        <div className="mb-2 flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
+          <p className="text-xs text-zinc-500 sm:w-40 sm:flex-none">
             {publication.conference} {publication.year}
           </p>
           {publication.award && (
@@ -34,9 +34,11 @@ export function PublicationEntry({
             </div>
           )}
         </div>
-        <h3 className="font-serif text-md mb-3">{publication.title}</h3>
-        <p className="text-sm text-zinc-600 mb-4">{publication.authors}</p>
-        <div className="flex flex-row gap-6">
+        <h3 className="font-serif text-lg font-normal text-zinc-900 mb-3">
+          {publication.title}
+        </h3>
+        <p className="text-sm text-zinc-600 mb-3">{publication.authors}</p>
+        <div className="flex flex-row gap-4">
           {publication.paperUrl && (
             <a
               href={publication.paperUrl}
@@ -75,7 +77,7 @@ export function PublicationEntry({
           )}
         </div>
         {publication.tldr && (
-          <p className="text-sm italic text-zinc-600 mt-4">
+          <p className="text-sm italic text-zinc-600 mt-3">
             {publication.tldr}
           </p>
         )}

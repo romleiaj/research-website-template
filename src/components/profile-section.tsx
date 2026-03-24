@@ -19,10 +19,10 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
   }
 
   return (
-    <div className="md:sticky top-12 flex flex-row-reverse md:flex-col gap-4 md:space-y-8">
+    <div className="md:sticky top-8 flex flex-row-reverse md:flex-col gap-3 md:space-y-4">
       {aboutMe.imageUrl && (
         <div className="w-1/3 md:w-full flex-shrink-0">
-          <div className="relative max-h-[45vh] md:w-[65%] aspect-[3/4]">
+          <div className="relative max-h-[45vh] md:w-[62%] aspect-[3/4]">
             <Image
               src={aboutMe.imageUrl}
               alt={aboutMe.name}
@@ -38,11 +38,11 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
           {aboutMe.name}
         </h1>
         {aboutMe.altName && (
-          <p className="text-zinc-600 text-md leading-relaxed tracking-wide mb-6">
+          <p className="text-zinc-600 text-md leading-relaxed tracking-wide mb-4">
             {aboutMe.altName}
           </p>
         )}
-        <p className="text-zinc-600 text-xs leading-relaxed tracking-wide uppercase mb-6">
+        <p className="text-zinc-600 text-xs leading-relaxed tracking-wide uppercase mb-4">
           {aboutMe.title}
           <br />
           {aboutMe.institutionUrl ? (
@@ -58,7 +58,7 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
             aboutMe.institution
           )}
         </p>
-        <div className="flex gap-6 mb-6">
+        <div className="flex gap-4 mb-4">
           {aboutMe.blogUrl && (
             <a
               href={aboutMe.blogUrl}
