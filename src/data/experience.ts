@@ -23,7 +23,7 @@ export const experienceData: Experience[] = [
     programs: [
       {
         name: "NOAA KAMERA",
-        description: "Growing into a lead role at Kitware, I now run the project: the multi-camera EO/IR/UV aerial survey system that AFSC's Marine Mammal Laboratory uses to survey seals and whales. I upgraded the system to Phase One cameras for more pixels on target during species classification, then built and validated a complete second imaging system so two aircraft can survey at the same time, and extended DIVE/VIAME with KAMERA-specific features. The work keeps me close to the field: three weeks of ice seal surveys out of Nome, Alaska, two weeks of Rice's whale surveys in Florida and Texas, and another four weeks on-site with MML staff in Lakeland and Seattle developing and duplicating the system.",
+        description: "I lead KAMERA, the multi-camera EO/IR/UV aerial survey system that AFSC's Marine Mammal Laboratory uses to survey seals and whales. I upgraded the system to Phase One cameras for more pixels on target during species classification, then built and validated a complete second imaging system so two aircraft can survey at the same time, and extended DIVE/VIAME with KAMERA-specific features. The work keeps me close to the field: three weeks of ice seal surveys out of Nome, Alaska, two weeks of Rice's whale surveys in Florida and Texas, and another four weeks on-site with MML staff in Lakeland and Seattle developing and duplicating the system.",
       },
       {
         name: "U.S. Army C5ISR Countermine",
@@ -39,7 +39,7 @@ export const experienceData: Experience[] = [
   {
     date: "Mar 2020 - Dec 2023",
     title: "Research and Development Engineer",
-    company: "Kitware, Inc. (Hybrid)",
+    company: "Kitware, Inc. (Hybrid, Clifton Park, NY)",
     programs: [
       {
         name: "DARPA URSA",
@@ -64,20 +64,20 @@ export const experienceData: Experience[] = [
     date: "May 2019 - Aug 2019",
     title: "Research and Development Intern",
     company: "Kitware, Inc. (Clifton Park, NY)",
-    description: "I joined two foundational projects: NOAA KAMERA, a multi-camera, multi-modal aerial survey system using EO, IR, and UV imagery to detect and geolocate Arctic marine mammals, and DARPA URSA (Urban Reconnaissance through Supervised Autonomy), focused on real-time edge-based tracking and activity recognition. I supported system integration across both, contributing to sensing networks backed by Jetson Xaviers and field-ready software workflows.",
+    description: "I supported system integration on NOAA KAMERA and DARPA URSA, working on Jetson Xavier-based sensing networks.",
     companyUrl: "https://www.kitware.com",
   },
   {
     date: "Jan 2018 - Aug 2018",
     title: "Research and Development Intern",
     company: "Kitware, Inc. (Clifton Park, NY)",
-    description: "I worked on computer vision and ROS development for DARPA Squad-X, where I developed an R-CNN-based person detector using EO/IR fusion and integrated it onto a Clearpath Husky UGV. I also built a ROS/Python architecture to replay 9 camera streams synchronously across 3 hardware nodes, which was merged into the project's main repository, and supported a field test of the UGV vision systems that earned a strong review from the DARPA program manager. On the side, I supported data collection for DARPA DIVA, gathering multi-modal camera streams for activity recognition.",
+    description: "For DARPA Squad-X, I developed an R-CNN-based person detector using EO/IR fusion for a Clearpath Husky UGV, and built a ROS/Python architecture to replay 9 camera streams synchronously across 3 hardware nodes. I also supported data collection for DARPA DIVA, gathering multi-modal camera streams for activity recognition.",
     companyUrl: "https://www.kitware.com",
   },
   {
     date: "Summer 2017",
     title: "Technical Intern",
     company: "Knolls Atomic Power Laboratory (Niskayuna, NY)",
-    description: "I worked on mechanical design and systems integration for a spent nuclear fuel examination program, serving as project lead on an equipment design effort supporting the examination of spent fuel components. I owned the mechanical design and its integration with existing systems, where tolerances and material constraints were set by the nuclear environment, and coordinated requirements and design reviews across equipment interface owners, support engineering, planning, safety organizations, and manufacturing, all within a Naval Reactors safety culture.",
+    description: "I was design lead on equipment for examining spent nuclear fuel components, owning the mechanical design and its integration with existing systems under a Naval Reactors safety culture.",
   },
 ];

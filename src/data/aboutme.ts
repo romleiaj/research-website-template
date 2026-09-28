@@ -23,7 +23,7 @@ export const aboutMe: AboutMe = {
   institution: "Kitware, Inc.",
   // Note that links work in the description
   description:
-    "I am a senior research and development engineer at Kitware, Inc., building open-source computer vision systems for real-world deployment. I enjoy turning research prototypes into reliable software.",
+    "I build real-time computer vision systems that have to work outside the lab: on survey aircraft, drones, ground robots, and underwater vehicles. Since 2024 I've led KAMERA, NOAA's multi-camera aerial survey system for ice seals and whales, and I've spent more than 25 weeks in the field running live operations, including survey flights out of Nome, Alaska. I'm an FAA Part 107 remote pilot and have completed aviation survival and egress training (ASET2).",
   email: "adam.romlein@gmail.com",
   // blogUrl: "/blog",
   secretDescription: "If I'm not in front of a screen you'll find me in the mountains.",
