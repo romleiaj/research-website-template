@@ -11,7 +11,7 @@ export const newsData: News[] = [
     title: "ICCV Marine Vision Workshop Paper",
     description:
       "First-author paper accepted and presented at the ICCV Marine Vision Workshop.",
-    link: "https://arxiv.org/abs/2509.19129v1",
+    link: "https://doi.org/10.1109/ICCVW69036.2025.00228",
   },
   {
     date: "June 2024",

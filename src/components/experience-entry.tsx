@@ -35,6 +35,21 @@ export function ExperienceEntry({ experience }: { experience: Experience }) {
             {experience.description}
           </p>
         )}
+        {experience.highlights && (
+          <ul className="mt-2 flex flex-col gap-2">
+            {experience.highlights.map((highlight) => (
+              <li
+                key={highlight.project}
+                className="text-sm text-zinc-600 leading-relaxed"
+              >
+                <span className="font-medium text-zinc-800">
+                  {highlight.project}:
+                </span>{" "}
+                {highlight.text}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );
