@@ -1,6 +1,6 @@
-export interface ExperienceHighlight {
-  project: string;
-  text: string;
+export interface Program {
+  name: string;
+  description: string;
 }
 
 export interface Experience {
@@ -8,8 +8,8 @@ export interface Experience {
   title: string;
   company: string;
   description?: string;
-  /** Per-project bullets, rendered as "Project: text" below the description. */
-  highlights?: ExperienceHighlight[];
+  /** One paragraph per program, each led by the program name in bold. */
+  programs?: Program[];
   advisor?: string;
   manager?: string;
   companyUrl?: string;
@@ -20,18 +20,18 @@ export const experienceData: Experience[] = [
     date: "Jan 2024 - Present",
     title: "Senior Research and Development Engineer",
     company: "Kitware, Inc. (Remote)",
-    highlights: [
+    programs: [
       {
-        project: "NOAA KAMERA",
-        text: "Project lead of the multi-camera EO/IR/UV aerial survey system used by AFSC/MML for marine mammal surveys. Upgraded the system to Phase One cameras, increasing pixels-on-target for species classification, and built and validated a second complete imaging system so two aircraft can survey concurrently. Extended DIVE/VIAME with KAMERA-specific features. Field operations include 3 weeks of ice seal surveys out of Nome, AK and 2 weeks of Rice's whale surveys in FL/TX, plus an additional 4 weeks on-site with MML staff in Lakeland, FL and Seattle, WA for system development and duplication.",
+        name: "NOAA KAMERA",
+        description: "Growing into a lead role at Kitware, I now run the project: the multi-camera EO/IR/UV aerial survey system that AFSC's Marine Mammal Laboratory uses to survey seals and whales. I upgraded the system to Phase One cameras for more pixels on target during species classification, then built and validated a complete second imaging system so two aircraft can survey at the same time, and extended DIVE/VIAME with KAMERA-specific features. The work keeps me close to the field: three weeks of ice seal surveys out of Nome, Alaska, two weeks of Rice's whale surveys in Florida and Texas, and another four weeks on-site with MML staff in Lakeland and Seattle developing and duplicating the system.",
       },
       {
-        project: "U.S. Army C5ISR Countermine",
-        text: "Lead engineer for relocalization and mapping on a UAS-based landmine and small explosive hazard detection effort under a Phase II SBIR. Built the image-to-map relocalization pipeline: SfM and orthoimagery map construction, offline SIFT/FAISS tile indexing, coarse homography, and RoMaV2 dense refinement on keyframes with pose propagation, benchmarked on Jetson Orin. Technical lead on a separate Phase II effort for long-term tracking and re-identification for threat quantification in UAS video.",
+        name: "U.S. Army C5ISR Countermine",
+        description: "I lead relocalization and mapping on a Phase II SBIR for UAS-based landmine detection, where I built a pipeline that matches live imagery to prebuilt SfM and orthoimagery maps using SIFT/FAISS tile indexing, coarse homography, and RoMaV2 dense refinement, benchmarked on Jetson Orin. I was also technical lead on a separate Phase II effort for long-term tracking and re-identification in UAS video.",
       },
       {
-        project: "AFRL TAKML",
-        text: "Built the tracking-to-TAK integration for the ARCTAK ATAK plugin: an edge-deployed URSA tracker and a Cursor-on-Target message layer publishing person tracks, re-ID matches, and live alerts through TAK Server.",
+        name: "AFRL TAKML",
+        description: "I connected our edge-deployed URSA tracker to the ARCTAK ATAK plugin, publishing person tracks, re-ID matches, and live alerts through TAK Server.",
       },
     ],
     companyUrl: "https://www.kitware.com",
@@ -40,22 +40,22 @@ export const experienceData: Experience[] = [
     date: "Mar 2020 - Dec 2023",
     title: "Research and Development Engineer",
     company: "Kitware, Inc. (Hybrid)",
-    highlights: [
+    programs: [
       {
-        project: "DARPA URSA",
-        text: "Lead systems engineer. Deployed TensorRT-optimized detection, tracking, and activity-recognition models on Jetson Xavier via ROS/Python. Orchestrated a network of 24+ mobile (UGV, UAV) and fixed PTZ cameras, and owned 12+ Git repositories and their Docker containerization. Supervised 3 OSTP interns building a tracking UI. The system reached TRL 6 through 20+ weeks of field testing.",
+        name: "DARPA URSA",
+        description: "As lead systems engineer, I deployed TensorRT-optimized detection, tracking, and activity-recognition models onto Jetson Xavier platforms via ROS/Python and orchestrated a network of over 24 mobile (UGV, UAV) and fixed PTZ cameras. I owned more than a dozen Git repositories and their Docker containerization, supervised three OSTP interns building a tracking UI, and helped carry the system to TRL 6 over 20+ weeks of field testing.",
       },
       {
-        project: "NOAA KAMERA",
-        text: "Core developer on the multi-camera, multi-modal (EO/IR/UV) system for real-time deep-learning detection and geolocation of ice seals during aerial surveys. Worked directly with NOAA scientists to mature the stack from research code into a stable, modular system. Adapted KAMERA for a large-UAS platform (NASA SIERRA-B).",
+        name: "NOAA KAMERA",
+        description: "As a core developer, I worked directly with NOAA scientists to mature the system from research code into a stable, modular stack, and adapted it for NASA's SIERRA-B large UAS.",
       },
       {
-        project: "NOAA ADAPT",
-        text: "Tailored the KAMERA stack into a modular sUAS payload running single-camera segmentation on a Jetson Xavier for ice-floe mapping, in collaboration with the University of Alaska Fairbanks.",
+        name: "NOAA ADAPT",
+        description: "That same stack became the basis for ADAPT, a modular sUAS payload for ice-floe mapping built with the University of Alaska Fairbanks.",
       },
       {
-        project: "DARPA ANGLER",
-        text: "Led integration: assembled and operated a BlueROV2 with a tethered Jetson Xavier for underwater data collection and in-water model deployment testing.",
+        name: "DARPA ANGLER",
+        description: "I led integration, assembling and operating a BlueROV2 with a tethered Jetson Xavier for underwater data collection and in-water model testing.",
       },
     ],
     companyUrl: "https://www.kitware.com",
@@ -64,19 +64,20 @@ export const experienceData: Experience[] = [
     date: "May 2019 - Aug 2019",
     title: "Research and Development Intern",
     company: "Kitware, Inc. (Clifton Park, NY)",
-    description: "Joined two foundational projects: NOAA KAMERA, a multi-camera, multi-modal aerial survey system using EO, IR, and UV imagery to detect and geolocate Arctic marine mammals, and DARPA URSA (Urban Reconnaissance through Supervised Autonomy), focused on real-time edge-based tracking and activity recognition. Supported system integration across both, contributing to Jetson Xavier-based sensing networks and field-ready software workflows.",
+    description: "I joined two foundational projects: NOAA KAMERA, a multi-camera, multi-modal aerial survey system using EO, IR, and UV imagery to detect and geolocate Arctic marine mammals, and DARPA URSA (Urban Reconnaissance through Supervised Autonomy), focused on real-time edge-based tracking and activity recognition. I supported system integration across both, contributing to sensing networks backed by Jetson Xaviers and field-ready software workflows.",
     companyUrl: "https://www.kitware.com",
   },
   {
     date: "Jan 2018 - Aug 2018",
     title: "Research and Development Intern",
     company: "Kitware, Inc. (Clifton Park, NY)",
-    description: "Built ROS1 Python nodes for a mobile multi-camera tracking system (DARPA Squad-X) and gained hands-on experience with robotics software onboard a Clearpath Husky.",
+    description: "I worked on computer vision and ROS development for DARPA Squad-X, where I developed an R-CNN-based person detector using EO/IR fusion and integrated it onto a Clearpath Husky UGV. I also built a ROS/Python architecture to replay 9 camera streams synchronously across 3 hardware nodes, which was merged into the project's main repository, and supported a field test of the UGV vision systems that earned a strong review from the DARPA program manager. On the side, I supported data collection for DARPA DIVA, gathering multi-modal camera streams for activity recognition.",
     companyUrl: "https://www.kitware.com",
   },
   {
     date: "Summer 2017",
     title: "Technical Intern",
     company: "Knolls Atomic Power Laboratory (Niskayuna, NY)",
+    description: "I worked on mechanical design and systems integration for a spent nuclear fuel examination program, serving as project lead on an equipment design effort supporting the examination of spent fuel components. I owned the mechanical design and its integration with existing systems, where tolerances and material constraints were set by the nuclear environment, and coordinated requirements and design reviews across equipment interface owners, support engineering, planning, safety organizations, and manufacturing, all within a Naval Reactors safety culture.",
   },
 ];
